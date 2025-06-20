@@ -1,0 +1,16 @@
+body {
+    color: black;
+    background-color: rgb(234, 255, 101);
+
+}
+
+/* vou chamar a classe */
+.Titulo{
+    color: rgb(175, 203, 11)
+
+}
+.corpo_texto{
+    color: blue;
+}
+
+
