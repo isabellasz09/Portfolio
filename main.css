@@ -10,14 +10,13 @@ html{
 }
 
 :root{
-    --primaria: #4f46e5;
-    --secundaria: #7c3aed;
-    --escuro: #0f172a;
-    --maisEscuro: #0a0f1c;
-    --claro: #e2e8f0;
-    --vidro: rgba(255,255,255,0.1);
+    --primaria: #43aa8b;       /* Verde esmeralda */
+    --secundaria: #90be6d;     /* Verde oliva claro */
+    --escuro: #1b1b1b;         /* Cinza muito escuro */
+    --maisEscuro: #121212;     /* Preto */
+    --claro: #f1faee;          /* Branco sujo */
+    --vidro: rgba(255, 255, 255, 0.07);
 }
-
 body{
     background-color: var(--escuro);
     color: var(--claro);
@@ -25,7 +24,7 @@ body{
 
 .navegacao{
     position: fixed;
-    background: rgba(15,23,42,0.8);
+    background: rgba(255, 255, 255, 0.01);
     width: 100%;
     z-index: 100;
     padding: 1.5rem;
@@ -92,7 +91,12 @@ h1{
 }
 
 .sobre{
+    min-height: 100vh;
     padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .sobre-titulo{
     font-size: 3rem;
@@ -116,7 +120,11 @@ h1{
 }
 
 .contato{
+    min-height: 100vh;
     padding: 6rem 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .contato-titulo{
     font-size: 3rem;
@@ -146,7 +154,7 @@ h1{
 }
 .campo-form:focus{
     border-color: var(--secundaria);
-    box-shadow: 0 0 0 10px rgba(79,70,229,0.3);
+    box-shadow: 0 0 0 5px rgba(143, 236, 143, 0.1);
 }
 .grupo-forms{
    margin-bottom: 1.5rem;
@@ -165,4 +173,21 @@ h1{
     transform: translateY(-4px);
 
 }
+.footer{
+    display: flex;
+    justify-content: center;
+}
+img{
+    display: flex;
+    justify-content: center;
+}
 
+.img a{
+    margin: 20px;
+    color: var(--claro);
+    text-decoration: none;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
