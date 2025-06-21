@@ -83,6 +83,7 @@ h1{
     color: var(--primaria);
     font-weight: bold;
     margin: 20px;
+    text-align: center;
 }
 
 .subtitulo{
@@ -181,14 +182,17 @@ h1{
 img{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .img a{
     margin: 20px;
     color: var(--claro);
     text-decoration: none;
+    text-align: center;
 }
 .img{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
