@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="particulas">
+
+    </div>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#Inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#Sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#Contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="Inicio" class="cabecalho">
+
+        <img src="./img/Isabella Souza.jpeg" alt="Foto de Isabella Souza" class="foto-perfil">
+        <h1>Isabella Souza</h1>
+        <p class="subtitulo">Desenvolvimento e aprendendo</p>
+
+    </main>
+
+    <section id="Sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-texto">
+                Tenho interesse em aprofundar meus conhecimentos na área de tecnologia, especialmente em desenvolvimento
+                de sistemas e infraestrutura de TI, buscando sempre aprimorar minhas habilidades técnicas e contribuir
+                de forma proativa nos ambientes em que estou inserida.
+            </p>
+        </div>
+    </section>
+
+    <section id="Contato" class="contato">
+        <h2 class="contato-titulo">Contatos</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome" required>
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite uma Mensagem" rows="6" id="mensagem"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault();
+            // o 'value' esta em maiusculo o certo é minusculo no caso ele nao passava os valores para a vareveis
+            // qual é a forma de  pagament?
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5547999305747';
+
+            const texto = `Olá meu nome é ${nome}, ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+            console.log(URL);
+
+            window.open(url, '_black')
+        }
+    </script>
+
+</body>
+
+</html>
