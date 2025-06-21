@@ -88,7 +88,7 @@ h1{
 .subtitulo{
     font-size: 2rem;
     color: var(--claro);
-     flex-direction: column;
+    text-align: center;
 }
 
 .sobre{
