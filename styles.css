@@ -229,6 +229,9 @@ h1{
 .grupo-forms{
    margin-bottom: 1.5rem;
 }
+.espaço{
+    font-size: 5px;
+}
 .botao-form{
     color: var(--claro);
     background: linear-gradient(45deg, var(--primaria), var(--secundaria));
@@ -241,15 +244,13 @@ h1{
 }
 .botao-form:hover{
     transform: translateY(-4px);
-
+    
 }
-
-
-.link {
+.link, a{
     justify-content: center;
     text-align: center;
-    margin: 20px;
     color: var(--claro);
     text-decoration: none;
-    
+    padding-top: 2rem;
+    margin: 5px;
 }
