@@ -116,7 +116,7 @@ h1{
     background: rgba(255,255,255,0.1);
 }
 .sobre-texto{
-    text-align: center;
+    text-align: justify;
     font-size: 1.2rem;
 
 }
@@ -243,24 +243,13 @@ h1{
     transform: translateY(-4px);
 
 }
-.footer{
-    display: flex;
-    justify-content: center;
-}
-img{
-    display: flex;
+
+
+.link {
     justify-content: center;
     text-align: center;
-}
-
-.img a{
     margin: 20px;
     color: var(--claro);
     text-decoration: none;
-    text-align: center;
-}
-.img{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    
 }
